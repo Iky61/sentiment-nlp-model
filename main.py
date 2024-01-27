@@ -70,7 +70,7 @@ def get_target_count(sentence, target):
     msg['sentences']=sentence
     return msg
 
-
+# model prediction
 class Predict(Resource):
     def predict():
         try:
