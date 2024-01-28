@@ -72,7 +72,10 @@ def get_target_count(sentence, target):
 
 # model prediction
 class Predict(Resource):
-    def predict():
+    def get(self):
+        return {'test': 'ok'}
+
+    def post(self):
         try:
             # Get input data from the request
             data = request.json['sentences']
